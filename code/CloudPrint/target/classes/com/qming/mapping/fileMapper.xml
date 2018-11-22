@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qming.dao.FileDao">
+    <resultMap id="file" type="com.qming.entity.FileEntity">
+        <id column="f_uuid" jdbcType="VARCHAR" property="fileUuid"/>
+        <result column="u_uuid" jdbcType="VARCHAR" property="userUuid"/>
+        <result column="order_uuid" jdbcType="VARCHAR" property="orderUuid"/>
+        <result column="file_name" jdbcType="VARCHAR" property="fileName"/>
+        <result column="file_path" jdbcType="VARCHAR" property="filePath"/>
+        <result column="file_size" jdbcType="BIGINT" property="fileSize"/>
+        <result column="file_type" jdbcType="VARCHAR" property="fileType"/>
+        <result column="upload_time" jdbcType="TIMESTAMP" property="uploadTime"/>
+    </resultMap>
+
+    <select id="getFilePage" resultType="java.lang.Integer">
+        SELECT CloudPrint.file_pages
+        FROM CloudPrint.file
+        WHERE u_uuid = #{userUuid, jdbcType=VARCHAR} AND
+        file_name = #{fileName, jdbcType=VARCHAR}
+    </select>
+
+    <insert id="insertFile" parameterType="file">
+        INSERT INTO
+        CloudPrint.file (
+        f_uuid,
+        u_uuid,
+        file_name,
+        file_path,
+        file_size,
+        file_type,
+        upload_time,
+        order_uuid
+        )
+        VALUES (
+        #{fileUuid,jdbcType=VARCHAR},
+        #{userUuid,jdbcType=VARCHAR},
+        #{fileName,jdbcType=VARCHAR},
+        #{filePath,jdbcType=VARCHAR},
+        #{fileSize,jdbcType=BIGINT},
+        #{fileType,jdbcType=VARCHAR},
+        CURRENT_TIMESTAMP,
+        #{orderUuid,jdbcType=VARCHAR}
+        )
+    </insert>
+    <delete id="deleteFile">
+        DELETE FROM CloudPrint.file
+        WHERE u_uuid = #{userUuid, jdbcType=VARCHAR} AND file_name = #{fileName, jdbcType=VARCHAR}
+    </delete>
+    <select id="getFileList" resultType="java.lang.String">
+        SELECT
+        file_name
+        FROM CloudPrint.file
+        WHERE
+        u_uid = #{userUuid, jdbcType = VARCHAR}
+    </select>
+</mapper>

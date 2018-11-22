@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 定义别名 -->
+    <typeAliases>
+        <typeAlias alias="userInfo" type="com.print.entity.UserInfo"/>
+        <typeAlias alias="userAuth" type="com.print.entity.UserAuth"/>
+        <typeAlias alias="file" type="com.print.entity.FileEntity"/>
+        <typeAlias alias="order" type="com.print.entity.Order"/>
+    </typeAliases>
+
+</configuration>
