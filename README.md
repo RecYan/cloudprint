@@ -1,6 +1,6 @@
 # <div align=center>Print+物联点击打印系统</div>
 
-<div align=center></div>
+
 -------
 
 
@@ -17,44 +17,44 @@
 
 ```
 ## 平台结构及打印流程 ##
-<div align=center>![平台结构](https://i.imgur.com/TMOMA0a.jpg)</div>
+![平台结构](https://i.imgur.com/TMOMA0a.jpg)
 <br/>
-<div align=center>![打印流程](https://i.imgur.com/CT7JfKh.jpg)</div>
+![打印流程](https://i.imgur.com/CT7JfKh.jpg)
 
 
 ## 系统相关功能流程 ##
 ### 登录模块 ###
-<div align=center>![登录模块](https://i.imgur.com/LY2beHx.jpg)</div>
+![登录模块](https://i.imgur.com/LY2beHx.jpg)
 
 ### 注册模块 ###
-<div align=center>![注册模块](https://i.imgur.com/k8LWaEj.jpg)</div>
+![注册模块](https://i.imgur.com/k8LWaEj.jpg)
 
 ### 预打印模块 ###
-<div align=center>![预打印模块](https://i.imgur.com/x4UHJ9X.jpg)</div>
+![预打印模块](https://i.imgur.com/x4UHJ9X.jpg)
 
 ### 订单状态模块 ###
-<div align=center>![订单状态模块](https://i.imgur.com/tjZMjjZ.jpg)</div>
+![订单状态模块](https://i.imgur.com/tjZMjjZ.jpg)
 
 ### 钱包模块 ###
-<div align=center>![钱包模块](https://i.imgur.com/EyEYT4h.jpg)</div>
+![钱包模块](https://i.imgur.com/EyEYT4h.jpg)
 
 ### 个人模块 ###
-<div align=center>![个人模块](https://i.imgur.com/6Nf60dM.jpg)</div>
+![个人模块](https://i.imgur.com/6Nf60dM.jpg)
 
 ## 项目效果图 ##
-<div align=center>![项目效果图](https://i.imgur.com/HTj4kXw.jpg)</div>
+![项目效果图](https://i.imgur.com/HTj4kXw.jpg)
 
-<div align=center>![项目效果图](https://i.imgur.com/l0dMIyY.jpg)</div>
+![项目效果图](https://i.imgur.com/l0dMIyY.jpg)
 
-<div align=center>![项目效果图](https://i.imgur.com/YEFFj5a.jpg)</div>
+![项目效果图](https://i.imgur.com/YEFFj5a.jpg)
 
-<div align=center>![项目效果图](https://i.imgur.com/V44iqeG.jpg)</div>
+![项目效果图](https://i.imgur.com/V44iqeG.jpg)
 
-<div align=center>![项目效果图](https://i.imgur.com/QzER59p.jpg)</div>
+![项目效果图](https://i.imgur.com/QzER59p.jpg)
 
-<div align=center>![项目效果图](https://i.imgur.com/j6NqNzS.jpg)</div>
+![项目效果图](https://i.imgur.com/j6NqNzS.jpg)
 
-<div align=center>![自动打印](https://i.imgur.com/jn8fXyi.jpg)</div>
+![自动打印](https://i.imgur.com/jn8fXyi.jpg)
 
 ## 小结 ##
 ``` java
